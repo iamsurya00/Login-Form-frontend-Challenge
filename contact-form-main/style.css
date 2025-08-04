@@ -1,41 +1,116 @@
+
+
 .parent{
-background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 8px;
+  background: #e0f1e7;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.indata {
+
+.card{
+    background: white;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+width: 40vw;
+
+  padding: 46px 30px;
+  border-radius: 10px;
+
 }
 
-.indata label {
+
+.names{
+  display: flex;
+  gap: 25px;
+  width: 100%;
+ 
+}
+.names div{
+  width: 100%;
+}
+input{
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+label{
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
+}
+.radio-btn{
+    display: flex;
+  flex-direction: column;
+}
+.radio-btn div{
+    
+    padding: 4px;
+
+}
+.query-type{
+  display: flex ;
+  gap: 10px;  
 }
 
-.indata input, .indata textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.query-type div{
+      border: 1px solid black;
+      width: 100%;
+      display: flex;
+   padding-left:10px ;
+      border-radius: 5px;
+
+}
+.query-type div input ,
+.acknowledge  input{
+  height: 15px;
+  width: auto;
 }
 
-.indata button {
-  padding: 10px;
-  background-color: #007bff;
+.option {
+  display: flex;
+gap: 5px;
+align-items: center;
+  
+
+}
+.option label{
+      height: full;
+     padding-top:10px ;
+
+text-align: center;
+}
+.acknowledge {
+ 
+    display: flex;
+    gap: 5px;
+
+}
+
+textarea{
+  height: 50px;border-radius: 5px;
+  width: 100%;
+}
+
+button{
+  background: #0c7d69;
   color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  padding: 4px;
 }
-
-.indata button:hover {
-  background-color: #0056b3;
+button:hover{
+  background: #2bcfb1;
 }
-
-.indata h4 {
-  margin-bottom: 20px;
-  color: #333;
+.heading{
+  font-size: x-large;
+  font-weight: bold;
 }
-
