@@ -21,54 +21,64 @@
     }
   </style>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<h1>Contact form</h1>
-  <div>
   <div class="parent">
-      <h4>Contact Us</h4>
-    
-   
-
-      <label>
-        <span>First Name</span>
-        <input type="text" required="">
-      </label>
+  <div class="card">
+      <div class="heading">Contact Us</div>
+     <div class="names"> 
       
-      <label>
-        <span>Last Name</span>
-        <input type="text" required="">
-      </label>
+     
+     <div>  <label> First Name</label>
+        <input type="text" required=""></div>
       
-      <label>
-        <span>Email Address</span>
+      
+    <div>  <label>
+        Last Name </label>
+        <input type="text" required="">
+     </div></div>
+      
+      <div>
+        <label>Email Address</label>
         <input type="email" required="email">
       </input>
-    </label>
+    </div>
     
+    <div class="radio-btn">  
+      <label> Query Type </label>
+       <div class="query-type" >
+        
+        <div class="option"> 
+          <input type="radio" name="query"  required="">
+        <label>General Enquiry</label>
+      </div>
 
-      <label> Query Type
-        <input type="radio"  required="">
-        <span>General Enquiry</span>
-
-        <input type="radio" required="">
-        <span>Support Request</span>
-
-      </label>
-
-      <label>
-        <span>Message</span>
-        <input type="text" required="">
-
-      </label>
-      <label>
-        <input type="checkbox" required="">
-        <span>I consent to being contacted by the team</span>
-      </label>
-      <button>
-        Submit</button>
+      <div class="option">   
+       <input type="radio" name="query" required="">
+        <label>Support Request</label></div>
+       </div>
       
+      </div>
+  
+      <div>
+        <label>Message</label>
+        <textarea></textarea>
+
+      </div>
+      <div class="acknowledge">
+          <input type="checkbox" required="">
+        <span>I consent to being contacted by the team</span>
+   
+
+     
+      
+      </div>
+         <button>  Submit</button>
+    
 
     </div>
   </div>
