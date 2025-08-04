@@ -1,0 +1,45 @@
+body{
+    background-color: #8becd3;
+    margin: auto;
+    padding: auto;
+    height: fit-content;
+    width: fit-content;
+}
+
+.group{
+   background-color: white;
+   height: 500px;
+   width: 700px;
+   border:px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.con{
+    border: 10px solid yellow;
+    height: 30px;
+    width: 90px;
+    margin-right: 600px;
+    margin-top: 50px;
+}
+
+.indata{
+
+border: 10px solid blue;
+display: flex;
+flex-direction: row;
+height: 30px;
+    width: 490px;
+    margin-right: 150px;
+    
+
+
+}
+
+
+
+
+
