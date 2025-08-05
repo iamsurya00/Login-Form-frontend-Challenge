@@ -10,16 +10,8 @@
 
   <title>Frontend Mentor | Contact form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+
+  
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,61 +20,75 @@
 
 <body>
   <div class="parent">
-  <div class="card">
+  <form class="card" id="contactForm">
       <div class="heading">Contact Us</div>
      <div class="names"> 
       
      
      <div>  <label> First Name</label>
-        <input type="text" required=""></div>
+       <input type="text" id="firstName" name="firstName" >
+<span class="error" id="firstNameError"> </span>
+
+      
+      </div>
       
       
     <div>  <label>
         Last Name </label>
-        <input type="text" required="">
+        <input name="lastName" id="lastName" type="text"  >
+        <span id="lastNameError"class="error"> </span>
      </div></div>
       
       <div>
         <label>Email Address</label>
-        <input type="email" required="email">
+        <input name="Email" id="Email" type="email">
+        <span id="EmailError"class="error"></span>
       </input>
     </div>
     
     <div class="radio-btn">  
       <label> Query Type </label>
-       <div class="query-type" >
+      <div class="query-type" >
         
         <div class="option"> 
-          <input type="radio" name="query"  required="">
-        <label>General Enquiry</label>
-      </div>
-
-      <div class="option">   
-       <input type="radio" name="query" required="">
-        <label>Support Request</label></div>
-       </div>
+          <input id="Query1" type="radio" name="query">
+          <label>General Enquiry</label>
+        </div>
+        
+        <div class="option">   
+          <input id="Query2" type="radio" name="query" >
+          <label>Support Request</label></div>
+        </div>
+        <span class="error" id="QueryError"></span>
       
       </div>
   
       <div>
         <label>Message</label>
-        <textarea></textarea>
+        <textarea name="message" id="message"></textarea>
+        <span id="messageError"class="error"> </span>
 
       </div>
       <div class="acknowledge">
-          <input type="checkbox" required="">
-        <span>I consent to being contacted by the team</span>
+
+        <div class="finalBox">
+
+          <input id="checkBox" type="checkbox" >
+          <p >I consent to being contacted by the team</p>
+        </div>
+        <span class="error" id="checkBoxError"></span>
    
 
      
       
       </div>
-         <button>  Submit</button>
-    
+    <button type="submit">Submit</button>
 
-    </div>
+
+    </form>
   </div>
 
+<script src="script.js"></script>
 
 </body>
 

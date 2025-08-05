@@ -91,12 +91,20 @@ align-items: center;
 text-align: center;
 }
 .acknowledge {
- 
+  
     display: flex;
+    flex-direction: column;
     gap: 5px;
 
 }
 
+.finalBox{
+  display: flex;
+   
+   align-items: center;
+   gap: 5px;
+
+}
 textarea{
   height: 50px;border-radius: 5px;
   width: 100%;
@@ -113,4 +121,8 @@ button:hover{
 .heading{
   font-size: x-large;
   font-weight: bold;
+}
+
+.error{
+  color: red;
 }
