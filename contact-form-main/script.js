@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
-    console.log(event);
     let isValid = true;
     if (firstName.value.trim() === "") {
       firstNameError.textContent = "First name field is required";
