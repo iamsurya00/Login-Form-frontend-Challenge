@@ -15,10 +15,6 @@ body {
   font-style: normal;
 }
 
-.thankyou{
-  display: none 
-}
-
 .card{
     background: white;
   display: flex;
@@ -128,4 +124,71 @@ button:hover{
 
 .error{
   color: red;
+}
+
+
+.thankyou {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #e0f1e7;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+
+
+.thankyou h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+#closeButton {
+    background: #f44336;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#closeButton:hover {
+    background: #d7382e;
+}
+
+
+.tq-card{
+    background: #ffffff;
+
+  border: 5px solid white;
+  padding: 10%;
+
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 40vw;
+    padding: 60px;
+  }
+  .names {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 795px) {
+  .card {
+    width: 90vw;
+    padding: 20px;
+  }
+  .names {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
