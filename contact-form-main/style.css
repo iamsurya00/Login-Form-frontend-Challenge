@@ -15,6 +15,9 @@ body {
   font-style: normal;
 }
 
+.thankyou{
+  display: none 
+}
 
 .card{
     background: white;
